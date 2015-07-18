@@ -23,7 +23,9 @@
     <body data-ng-app="dodApp">               
       <div class="container" data-ng-controller="QuizCtrl">
         <div class="row center">
-          <h1><img src="{{ 'img/logo_.png' | theme_image_url }}" class="logo" alt=""></h1>
+          <h1 data-ng-hide="quiz.answer"><img src="{{ 'img/logo_.png' | theme_image_url }}" class="logo" alt=""></h1>
+          <h1 data-ng-show="quiz.result"><img src="{{ 'img/logo_success.png' | theme_image_url }}" class="logo" alt=""></h1>
+          <h1 data-ng-hide="quiz.result"><img src="{{ 'img/logo_fail.png' | theme_image_url }}" class="logo" alt=""></h1>
         </div>
 
         <div class="row">
@@ -43,12 +45,7 @@
           </div>
         </div> <!-- end row -->
 
-        <div class="row" data-ng-show="quiz.answer">
-          <div class="alert" role="alert" data-ng-class="{'alert-success': quiz.result == true, 'alert-danger': quiz.result == false}">
-            <span data-ng-show="quiz.result"><span class="glyphicon glyphicon-ok"></span> D&uuml;nnerlittchen, correct! Fluitje van een cent...</span>
-            <span data-ng-hide="quiz.result"><span class="glyphicon glyphicon-remove"></span> Ook dat nog - incorrect! Machen Sie es nochmal!</span>
-          </div>
-        </div> <!-- end row -->
+
       </div> <!-- end container -->
       {% assets output="dist/js/app.js", "bower_components/angular/angular.min.js", "js/app.js" %}
           {{ 'dist/js/app.js' | javascript_tag }}
