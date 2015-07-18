@@ -8,6 +8,7 @@ import yaml
 import logging
 from functools import wraps
 from hashlib import sha1
+from random import randint
 
 from jinja2 import Environment as JinjaEnvironment, FileSystemLoader
 from webassets import Environment as AssetsEnvironment
@@ -42,13 +43,20 @@ class Application(tornado.web.Application):
         with open(site_path) as f:
             site = yaml.load(f)
 
+        data_path = os.path.join(os.path.abspath('.'), "data")        
+        with open(os.path.join(data_path, 'dutch.txt')) as dutch_file:
+            dutch_sights = dutch_file.readlines()
+        with open(os.path.join(data_path, 'deutsch.txt')) as deutsch_file:
+            deutsch_sights = deutsch_file.readlines()
+
         settings = dict(
             template_path=os.path.join(os.path.abspath('.'), "site", "templates"),
             snippet_path=os.path.join(os.path.abspath('.'), "site", "snippets"),
             static_path=os.path.join(os.path.abspath('.'), "site", "assets"),
             static_url_prefix='/assets/',
             site=site,
-            answer_salt=',<1qbl,_a{jJ9'
+            answer_salt=',<1qbl,_a{jJ9',
+            sights={'dutch': dutch_sights, 'deutsch': deutsch_sights}
         )
 
         log = logging.getLogger('tornado.application')
@@ -132,10 +140,11 @@ class PageHandler(EngineMixin, tornado.web.RequestHandler):
 
         template = self.get_template(slug)
 
-        response = template.render(site=self.site, page=page)
+        response = template.render(site=self.site, page=page, sights=self.settings['sights'])
 
         self.write(response)
         self.finish()
+
 
 class QuizHandler(tornado.web.RequestHandler):
 
@@ -144,11 +153,24 @@ class QuizHandler(tornado.web.RequestHandler):
                 self.settings['answer_salt'],
                 str(answer))).hexdigest()
 
+    def get_random_sight(self):
+        answer = 'dutch'
+        if randint(0, 1) == 1:
+            answer = 'deutsch'
+
+        pot_sights = self.settings['sights'][answer]
+
+        sight = pot_sights[randint(0, len(pot_sights))]
+
+        return answer, sight
+
     def get_new_quiz(self):
+        answer, sight = self.get_random_sight()
+        img_src = 'https://maps.googleapis.com/maps/api/streetview?size=600x300&location={}&heading=151.78&pitch=-0.76'.format(sight)
         quiz = {
-            'img_src': 'https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76',
+            'img_src': img_src,
             'answer': '',
-            'hashed_answer': self.hash_answer('dutch'),
+            'hashed_answer': self.hash_answer(answer),
             'result': None}
         return quiz
 

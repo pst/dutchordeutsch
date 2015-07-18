@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="{{ 'favicon.ico' | theme_image_url }}">
+
+      <title>{{ title }}</title>
+
+      {% assets filters="libsass", output="dist/css/design.css", "css/index.css.scss" %}
+          {{ 'dist/css/design.css' | stylesheet_tag }}
+      {% endassets %}
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+    <body data-ng-app="dodApp">               
+        
+        {% for country in sights %}
+        <div class="row">
+            {% for sight in sights[country] %}
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location={{ sight.decode('utf-8') | urlencode }}&heading=151.78&pitch=-0.76" alt="{{ sight.decode('utf-8') }}">
+                </div>
+                <div class="caption">
+                    <p>{{ sight.decode('utf-8') }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+
+      {% assets output="dist/js/app.js", "bower_components/angular/angular.min.js", "js/app.js" %}
+          {{ 'dist/js/app.js' | javascript_tag }}
+      {% endassets %}
+    </body>
+</html>
