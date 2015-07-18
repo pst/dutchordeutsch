@@ -20,8 +20,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
   </head>
-    <body>               
-      <div class="container">
+    <body data-ng-app="dodApp">               
+      <div class="container" data-ng-controller="QuizCtrl">
         <div class="row center">
           <h1>Dutch or Deutsch?</h1>
         </div>
@@ -29,19 +29,19 @@
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <div class="img-wrapper center">
-              <img src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76" />
+              <img data-ng-src="{% raw %}{{ quiz.img_src }}{% endraw %}" />
             </div>
           </div>
         </div>  <!-- end row -->
 
         <div class="row">
           <div class="col-sm-4 col-sm-offset-2 center">
-             <button class="btn btn-primary">
+             <button class="btn btn-primary" data-ng-click="submit('dutch')">
                Dutch
              </button>
            </div>
            <div class="col-sm-4 center">        
-             <button class="btn btn-warning">
+             <button class="btn btn-warning" data-ng-click="submit('deutsch')">
                Deutsch
              </button>
           </div>
@@ -54,6 +54,8 @@
         </div>
 
       </div>
+      {% assets output="dist/js/app.js", "bower_components/angular/angular.min.js", "js/app.js" %}
+          {{ 'dist/js/app.js' | javascript_tag }}
+      {% endassets %}
     </body>
 </html>
-

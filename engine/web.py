@@ -3,9 +3,11 @@
 
 import os
 import sys
+import json
 import yaml
 import logging
 from functools import wraps
+from hashlib import sha1
 
 from jinja2 import Environment as JinjaEnvironment, FileSystemLoader
 from webassets import Environment as AssetsEnvironment
@@ -45,7 +47,8 @@ class Application(tornado.web.Application):
             snippet_path=os.path.join(os.path.abspath('.'), "site", "snippets"),
             static_path=os.path.join(os.path.abspath('.'), "site", "assets"),
             static_url_prefix='/assets/',
-            site=site
+            site=site,
+            answer_salt=',<1qbl,_a{jJ9'
         )
 
         log = logging.getLogger('tornado.application')
@@ -53,6 +56,7 @@ class Application(tornado.web.Application):
         handlers = [(r"/assets/(.*)",
                         tornado.web.StaticFileHandler,
                         dict(path=settings['static_path'])),
+                    (r"/quiz$", QuizHandler),
                     (r"(/[a-z0-9\-_\/]*)$", PageHandler)]
 
         tornado.web.Application.__init__(self, handlers, **settings)
@@ -64,7 +68,7 @@ class EngineMixin(object):
         return '<link type="text/css" rel="stylesheet" media="screen" href="{0}">'.format(self.static_url(name))
 
     def javascript_tag(self, name):
-        return '<script type="text/javascript" src="{0}">'.format(self.static_url(name))
+        return '<script type="text/javascript" src="{0}"></script>'.format(self.static_url(name))
 
     def theme_image_url(self, name):
         return '{0}'.format(name)
@@ -132,6 +136,42 @@ class PageHandler(EngineMixin, tornado.web.RequestHandler):
 
         self.write(response)
         self.finish()
+
+class QuizHandler(tornado.web.RequestHandler):
+
+    def hash_answer(self, answer):
+        return sha1("{}{}".format(
+                self.settings['answer_salt'],
+                answer)).hexdigest()
+
+    def get_new_quiz(self):
+        quiz = {
+            'img_src': 'https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76',
+            'answer': '',
+            'hashed_answer': self.hash_answer('dutch'),
+            'result': None}
+        return quiz
+
+    def check_answer(self, quiz):
+        quiz['result'] = False
+        if quiz['hashed_answer'] == self.hash_answer(quiz['answer']):
+            quiz['result'] = True
+        return quiz
+
+    def prepare(self):
+        self.set_header("Content-Type", 'application/json; charset="utf-8"')
+
+    @force_https
+    def post(self):
+        quiz = self.get_new_quiz()
+        self.write(json.dumps(quiz))
+        self.finish()
+
+    @force_https
+    def put(self):
+        quiz = self.check_answer(json.loads(self.request.body))
+        self.write(json.dumps(quiz))
+        self.finish()
         
 
 define("port", default="5555", help="Port to listen on")
@@ -143,7 +183,7 @@ if __name__ == "__main__":
     server = tornado.httpserver.HTTPServer(app, xheaders=True)
     server.bind(options.port)
     try:
-        server.start() 
+        server.start()
         tornado.ioloop.IOLoop.instance().start()
     except KeyboardInterrupt:
         tornado.ioloop.IOLoop.instance().stop()
