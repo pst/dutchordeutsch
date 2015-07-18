@@ -1,5 +1,5 @@
 --- 
-name: "Holland Hack Quizz"
+name: "Dutch or Deutsch"
 seo_title: ""
 meta_description: ""
 meta_tags: ""
@@ -8,4 +8,9 @@ pages:
     listed: false
     position: 0
     published: true
-    title: ""
+    title: "Dutch or Deutsch"
+  /_debug: 
+    listed: false
+    position: 0
+    published: true
+    title: "Location Debugger"

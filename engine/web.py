@@ -140,10 +140,11 @@ class PageHandler(EngineMixin, tornado.web.RequestHandler):
 
         template = self.get_template(slug)
 
-        response = template.render(site=self.site, page=page)
+        response = template.render(site=self.site, page=page, sights=self.settings['sights'])
 
         self.write(response)
         self.finish()
+
 
 class QuizHandler(tornado.web.RequestHandler):
 

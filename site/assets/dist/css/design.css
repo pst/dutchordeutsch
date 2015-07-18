@@ -2,5 +2,26 @@
 .center {
   text-align: center; }
 
-.red {
-  color: blue; }
+/* line 1, ../sass/styles.css.sass */
+.img-wrapper > img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border: solid 1rem white;
+  margin-bottom: 1rem;
+  -moz-box-shadow: 0 0 12px black;
+  -webkit-box-shadow: 0 0 12px black;
+  box-shadow: 0 0 12px black; }
+
+/* line 12, ../sass/styles.css.sass */
+img.logo {
+  width: 75%; }
+
+/* line 15, ../sass/styles.css.sass */
+img.selector {
+  transition: all 0.1s ease-out; }
+
+/* line 18, ../sass/styles.css.sass */
+img.selector:hover {
+  -moz-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg); }
