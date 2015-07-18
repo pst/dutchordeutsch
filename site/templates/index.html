@@ -34,12 +34,19 @@
           </div>
         </div>  <!-- end row -->
 
-        <div class="row">
+        <div class="row" data-ng-hide="quiz.answer">
           <div class="col-xs-6 center">
             <img src="{{ 'img/dutch.png' | theme_image_url }}" alt="" class="selector" data-ng-click="submit('dutch')">
            </div>
            <div class="col-xs-6 center">        
             <img src="{{ 'img/deutsch.png' | theme_image_url }}" alt="" class="selector" data-ng-click="submit('deutsch')">
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row" data-ng-show="quiz.answer">
+          <div class="alert" role="alert" data-ng-class="{'alert-success': quiz.result == true, 'alert-danger': quiz.result == false}">
+            <span data-ng-show="quiz.result"><span class="glyphicon glyphicon-ok"></span> Richtig!</span>
+            <span data-ng-hide="quiz.result"><span class="glyphicon glyphicon-remove"></span> Leider falsch.</span>
           </div>
         </div> <!-- end row -->
       </div> <!-- end container -->
