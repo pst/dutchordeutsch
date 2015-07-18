@@ -6,13 +6,15 @@ app.controller({QuizCtrl: [
     '$scope', '$http', '$window',
     function ($scope, $http, $window) {
 
-        $http.post('/quiz')
-        .success(function(quiz) {
-            $scope.quiz = quiz;
-        })
-        .error(function(error) {
-            console.log(error);
-        });
+        $scope.quizup = function() {
+            $http.post('/quiz')
+            .success(function(quiz) {
+                $scope.quiz = quiz;
+            })
+            .error(function(error) {
+                console.log(error);
+            });
+        };
         
         $scope.submit = function(answer) {
             $scope.quiz.answer = answer;
@@ -24,6 +26,8 @@ app.controller({QuizCtrl: [
                 console.log(error);
             });
         };
+
+        $scope.quizup();
     }]
 });
 
