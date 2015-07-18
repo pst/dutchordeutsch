@@ -23,7 +23,7 @@
     <body data-ng-app="dodApp">               
       <div class="container" data-ng-controller="QuizCtrl">
         <div class="row center">
-          <h1>Dutch or Deutsch?</h1>
+          <h1><img src="{{ 'img/logo.png' | theme_image_url }}" class="logo" alt=""></h1>
         </div>
 
         <div class="row">
@@ -45,8 +45,8 @@
 
         <div class="row" data-ng-show="quiz.answer">
           <div class="alert" role="alert" data-ng-class="{'alert-success': quiz.result == true, 'alert-danger': quiz.result == false}">
-            <span data-ng-show="quiz.result"><span class="glyphicon glyphicon-ok"></span> Richtig!</span>
-            <span data-ng-hide="quiz.result"><span class="glyphicon glyphicon-remove"></span> Leider falsch.</span>
+            <span data-ng-show="quiz.result"><span class="glyphicon glyphicon-ok"></span> D&uuml;nnerlittchen, correct! Fluitje van een cent...</span>
+            <span data-ng-hide="quiz.result"><span class="glyphicon glyphicon-remove"></span> Ook dat nog - incorrect! Machen Sie es nochmal!</span>
           </div>
         </div> <!-- end row -->
       </div> <!-- end container -->
