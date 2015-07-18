@@ -1,10 +1,10 @@
-Aachener Dom in Aachen (NRW)
-Nürburgring in Adenau (Rheinland-Pfalz)
-Therme in Baden-Baden (Baden-Württemberg)
-Naturpark Schwarzwald in Baden-Württemberg
-Altstadt in Bamberg (Bayern)
+Aachener Dom in Aachen 
+Nürburgring in Adenau
+Therme in Baden-Baden
+Naturpark Schwarzwald Baden-Württemberg
+Altstadt in Bamberg 
 Romantische Straße in Bayern / Baden-Württemberg
-Kehlsteinhaus in Berchtesgaden (Bayern)
+Kehlsteinhaus in Berchtesgaden
 Museumsinsel in Berlin
 Berliner Mauer in Berlin
 Reichstag in Berlin
@@ -17,82 +17,984 @@ Berliner Philharmonie in Berlin
 Jüdisches Museum in Berlin
 Brandenburger Tor in Berlin
 Roland und Rathaus in Bremen
-Schloss Augustusburg in Brühl (Sachsen)
-Chiemsee mit Insel Herrenchiemsee in Chiemsee (Bayern)
-Zwinger mit Gemäldegalerie in Dresden (Sachsen)
-Semperoper in Dresden (Sachsen)
-Elbtal in Dresden (Sachsen)
-Grünes Gewölbe in Dresden (Sachsen)
-Wartburg in Eisenach (Thüringen)
-Krämerbrücke und Altstadt in Erfurt (Thüringen)
-Erfurter Dom in Erfurt (Thüringen)
-Zeche Zollverein in Essen (NRW)
-Schloss Linderhof in Ettal (Bayern)
-Museumsufer Frankfurt in Frankfurt am Main (Hessen)
-Frankfurter Römer in Frankfurt am Main (Hessen)
-Freiburger Münster in Freiburg (Baden-Württemberg)
-Zugspitze in Garmisch-Partenkirchen (Bayern)
-Altstadt in Goslar (Niedersachsen)
+Schloss Augustusburg in Brühl 
+Chiemsee mit Insel Herrenchiemsee in Chiemsee
+Zwinger mit Gemäldegalerie in Dresden
+Semperoper in Dresden
+Elbtal in Dresden
+Grünes Gewölbe in Dresden
+Wartburg in Eisenach
+Krämerbrücke und Altstadt in Erfurt
+Erfurter Dom in Erfurt
+Zeche Zollverein in Essen
+Schloss Linderhof in Ettal
+Museumsufer Frankfurt in Frankfurt am Main
+Frankfurter Römer in Frankfurt am Main
+Freiburger Münster in Freiburg
+Zugspitze in Garmisch-Partenkirchen
+Altstadt in Goslar
 Hafen und Fischmarkt in Hamburg
 Miniatur Wunderland in Hamburg
 Speicherstadt in Hamburg
 Reeperbahn in Hamburg
 Rathaus in Hamburg
-Herrenhäuser Gärten in Hannover (Niedersachsen)
-Altstadt in Heidelberg (Baden-Württemberg)
-Schloss in Heidelberg in Baden-Württemberg
-Wilhelmshöhe in Kassel (Hessen)
-Deutsches Eck in Koblenz (Rheinland-Pfalz)
-Bodensee mit der Insel Mainau in Konstanz (Baden-Württemberg)
-Thomaskirche in Leipzig (Sachsen)
-Völkerschlachtdenkmal in Leipzig (Sachsen)
-Holstentor in Lübeck (Schleswig-Holstein)
-Residenzschloss in Ludwigsburg in Baden-Württemberg
-Dom in Mainz (Rheinland-Pfalz)
-Schloss in Mannheim (Baden-Württemberg)
-Wasserturm in Mannheim (Baden-Württemberg)
-Kloster in Maulbronn (Baden-Württemberg)
-Insel Rügen mit Kreidefelsen in Mecklenburg-Vorpommern
-Schloss in Moritzburg (Sachsen)
-Englischer Garten in München (Bayern)
-Marienplatz in München (Bayern)
-Allianz Arena in München (Bayern)
-Schloss Nymphenburg in München (Bayern)
-Deutsches Museum in München (Bayern)
-Münchner Hofbräuhaus in München (Bayern)
-Alte und Neue Pinakothek in München (Bayern)
-BMW Welt in München (Bayern)
-Burg Eltz in Münstermaifeld (Rheinland-Pfalz)
+Herrenhäuser Gärten in Hannover
+Altstadt in Heidelberg
+Schloss in Heidelberg 
+Wilhelmshöhe in Kassel
+Deutsches Eck in Koblenz
+Bodensee mit der Insel Mainau in Konstanz
+Thomaskirche in Leipzig 
+Völkerschlachtdenkmal in Leipzig
+Holstentor in Lübeck
+Residenzschloss in Ludwigsburg
+Dom in Mainz
+Schloss in Mannheim
+Wasserturm in Mannheim
+Kloster in Maulbronn
+Insel Rügen mit Kreidefelsen
+Schloss in Moritzburg
+Englischer Garten in München
+Marienplatz in München
+Allianz Arena in München
+Schloss Nymphenburg in München
+Deutsches Museum in München
+Münchner Hofbräuhaus in München
+Alte und Neue Pinakothek in München 
+BMW Welt in München
+Burg Eltz in Münstermaifeld
 Lüneburger Heide in Niedersachsen
 Wattenmeer in Niedersachsen, Hamburg, Schleswig-Holstein
 Naturpark Harz in Niedersachsen, Sachsen-Anhalt, Thüringen
-Altstadt in Nürnberg (Bayern)
-Kaiserburg in Nürnberg (Bayern)
-Schloss Sanssouci in Potsdam (Brandenburg)
-Altstadt in Quedlinburg (Sachsen-Anhalt)
-Altstadt in Regensburg (Bayern)
-Altstadt in Rotenburg ob der Tauber (Baden Württemberg)
-Drosselgasse und Weinberge in Rüdesheim (Hessen)
+Altstadt in Nürnberg
+Kaiserburg in Nürnberg 
+Schloss Sanssouci in Potsdam 
+Altstadt in Quedlinburg 
+Altstadt in Regensburg 
+Altstadt in Rotenburg ob der Tauber
+Drosselgasse und Weinberge in Rüdesheim 
 Sächsische Schweiz mit Bastei und Festung Königstein in Sachsen
 Brocken (mit Schmalspurbahn) in Sachsen-Anhalt
 Hochseeinsel Helgoland in Schleswig-Holstein
 Insel Sylt in Schleswig-Holstein
-Königssee mit Malerwinkl und St. Bartholomä in Schönau (Bayern)
-Schloss Neuschwanstein in Schwangau (Bayern)
-Schloss in Schwerin (Mecklenburg-Vorpommern)
-Schloss in Schwetzingen (Baden-Württemberg)
-Burg Hohenzollern in Sigmaringen (Baden-Württemberg)
-Dom in Speyer (Rheinland-Pfalz)
-Loreley im Oberen Mittelrheintal in St. Goarshausen (Rheinland-Pfalz)
-Wieskirche in Steingaden (Bayern)
-Mercedes-Benz Museum in Stuttgart (Baden-Württemberg)
-Porsche Museum in Stuttgart (Baden-Württemberg)
-Römische Baudenkmäler in Trier (Rheinland-Pfalz)
-Ulmer Münster in Ulm (Baden-Württemberg)
-Völklinger Hütte in Völklingen (Saarland)
+Königssee mit Malerwinkl und St. Bartholomä in Schönau 
+Schloss Neuschwanstein in Schwangau 
+Schloss in Schwerin 
+Schloss in Schwetzingen 
+Burg Hohenzollern in Sigmaringen 
+Dom in Speyer 
+Loreley im Oberen Mittelrheintal in St. Goarshausen
+Wieskirche in Steingaden
+Mercedes-Benz Museum in Stuttgart 
+Porsche Museum in Stuttgart 
+Römische Baudenkmäler in Trier 
+Ulmer Münster in Ulm 
+Völklinger Hütte in Völklingen 
 Klassisches Weimar in Thüringen
-Bauhaus in Weimar (Thüringen) und Dessau (Sachsen-Anhalt)
-Autostadt in Wolfsburg (Niedersachsen)
-Schwebebahn in Wuppertal (Nordrhein-Westfalen)
-Residenz in Würzburg (Bayern)
-Festung Marienberg in Würzburg (Bayern)
+Bauhaus in Weimar und Dessau 
+Autostadt in Wolfsburg
+Schwebebahn in Wuppertal 
+Residenz in Würzburg 
+Festung Marienberg in Würzburg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
