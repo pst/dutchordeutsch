@@ -71,7 +71,7 @@ class EngineMixin(object):
         return '<script type="text/javascript" src="{0}"></script>'.format(self.static_url(name))
 
     def theme_image_url(self, name):
-        return '{0}'.format(name)
+        return '{0}'.format(self.static_url(name))
 
     def initialize(self):
         loader = FileSystemLoader([
