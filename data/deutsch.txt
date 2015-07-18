@@ -1,9 +1,5 @@
 Aachener Dom in Aachen 
-Nürburgring in Adenau
-Therme in Baden-Baden
-Naturpark Schwarzwald Baden-Württemberg
 Altstadt in Bamberg 
-Romantische Straße in Bayern / Baden-Württemberg
 Kehlsteinhaus in Berchtesgaden
 Museumsinsel in Berlin
 Berliner Mauer in Berlin
@@ -18,13 +14,10 @@ Jüdisches Museum in Berlin
 Brandenburger Tor in Berlin
 Roland und Rathaus in Bremen
 Schloss Augustusburg in Brühl 
-Chiemsee mit Insel Herrenchiemsee in Chiemsee
 Zwinger mit Gemäldegalerie in Dresden
 Semperoper in Dresden
-Elbtal in Dresden
 Grünes Gewölbe in Dresden
 Wartburg in Eisenach
-Krämerbrücke und Altstadt in Erfurt
 Erfurter Dom in Erfurt
 Zeche Zollverein in Essen
 Schloss Linderhof in Ettal
@@ -32,18 +25,13 @@ Museumsufer Frankfurt in Frankfurt am Main
 Frankfurter Römer in Frankfurt am Main
 Freiburger Münster in Freiburg
 Zugspitze in Garmisch-Partenkirchen
-Altstadt in Goslar
 Hafen und Fischmarkt in Hamburg
 Miniatur Wunderland in Hamburg
 Speicherstadt in Hamburg
 Reeperbahn in Hamburg
 Rathaus in Hamburg
-Herrenhäuser Gärten in Hannover
-Altstadt in Heidelberg
 Schloss in Heidelberg 
-Wilhelmshöhe in Kassel
 Deutsches Eck in Koblenz
-Bodensee mit der Insel Mainau in Konstanz
 Thomaskirche in Leipzig 
 Völkerschlachtdenkmal in Leipzig
 Holstentor in Lübeck
@@ -65,32 +53,19 @@ BMW Welt in München
 Burg Eltz in Münstermaifeld
 Lüneburger Heide in Niedersachsen
 Wattenmeer in Niedersachsen, Hamburg, Schleswig-Holstein
-Naturpark Harz in Niedersachsen, Sachsen-Anhalt, Thüringen
 Altstadt in Nürnberg
 Kaiserburg in Nürnberg 
 Schloss Sanssouci in Potsdam 
 Altstadt in Quedlinburg 
-Altstadt in Regensburg 
-Altstadt in Rotenburg ob der Tauber
-Drosselgasse und Weinberge in Rüdesheim 
-Sächsische Schweiz mit Bastei und Festung Königstein in Sachsen
-Brocken (mit Schmalspurbahn) in Sachsen-Anhalt
-Hochseeinsel Helgoland in Schleswig-Holstein
-Insel Sylt in Schleswig-Holstein
-Königssee mit Malerwinkl und St. Bartholomä in Schönau 
 Schloss Neuschwanstein in Schwangau 
 Schloss in Schwerin 
 Schloss in Schwetzingen 
-Burg Hohenzollern in Sigmaringen 
 Dom in Speyer 
-Loreley im Oberen Mittelrheintal in St. Goarshausen
 Wieskirche in Steingaden
 Mercedes-Benz Museum in Stuttgart 
 Porsche Museum in Stuttgart 
 Römische Baudenkmäler in Trier 
 Ulmer Münster in Ulm 
-Völklinger Hütte in Völklingen 
-Klassisches Weimar in Thüringen
 Bauhaus in Weimar und Dessau 
 Autostadt in Wolfsburg
 Schwebebahn in Wuppertal 
