@@ -142,7 +142,7 @@ class QuizHandler(tornado.web.RequestHandler):
     def hash_answer(self, answer):
         return sha1("{}{}".format(
                 self.settings['answer_salt'],
-                answer)).hexdigest()
+                str(answer))).hexdigest()
 
     def get_new_quiz(self):
         quiz = {
