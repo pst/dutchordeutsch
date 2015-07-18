@@ -1,0 +1,5 @@
+tornado==4.0.2
+PyYAML==3.11
+Jinja2==2.7.3
+webassets==0.10.1
+webassets-libsass==0.1
