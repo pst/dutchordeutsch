@@ -24,8 +24,8 @@
       <div class="container" data-ng-controller="QuizCtrl">
         <div class="row center">
           <h1 data-ng-hide="quiz.answer"><img src="{{ 'img/logo_.png' | theme_image_url }}" class="logo" alt=""></h1>
-          <h1 data-ng-show="quiz.result"><img src="{{ 'img/logo_success.png' | theme_image_url }}" class="logo" alt=""></h1>
-          <h1 data-ng-hide="quiz.result"><img src="{{ 'img/logo_fail.png' | theme_image_url }}" class="logo" alt=""></h1>
+          <h1 data-ng-show="quiz.answer && success"><img src="{{ 'img/logo_success.png' | theme_image_url }}" class="logo" alt=""></h1>
+          <h1 data-ng-show="quiz.answer && success == false"><img src="{{ 'img/logo_fail.png' | theme_image_url }}" class="logo" alt=""></h1>
         </div>
 
         <div class="row">
