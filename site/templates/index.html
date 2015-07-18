@@ -35,25 +35,14 @@
         </div>  <!-- end row -->
 
         <div class="row">
-          <div class="col-sm-4 col-sm-offset-2 center">
-             <button class="btn btn-primary" data-ng-click="submit('dutch')">
-               Dutch
-             </button>
+          <div class="col-xs-6 center">
+            <img src="{{ 'dutch.png' | theme_image_url }}" alt="" class="selector" data-ng-click="submit('dutch')">
            </div>
-           <div class="col-sm-4 center">        
-             <button class="btn btn-warning" data-ng-click="submit('deutsch')">
-               Deutsch
-             </button>
+           <div class="col-xs-6 center">        
+            <img src="{{ 'deutsch.png' | theme_image_url }}" alt="" class="selector" data-ng-click="submit('deutsch')">
           </div>
         </div> <!-- end row -->
-
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <span class="red">Your score</span>
-          </div>
-        </div>
-
-      </div>
+      </div> <!-- end container -->
       {% assets output="dist/js/app.js", "bower_components/angular/angular.min.js", "js/app.js" %}
           {{ 'dist/js/app.js' | javascript_tag }}
       {% endassets %}
