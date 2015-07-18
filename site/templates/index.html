@@ -22,38 +22,37 @@
   </head>
     <body>               
       <div class="container">
-        <div class="row center">
-          <h1>Dutch or Deutsch?</h1>
-        </div>
-
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <div class="img-wrapper center">
-              <img src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76" />
+          <sidebar class="col-md-2">
+            <h3 id="score">
+              Your score
+            </h3>
+          </sidebar>
+          
+          <main class="col-md-10">
+            <div class="row center">
+              <h1>Dutch or Deutsch?</h1>
             </div>
-          </div>
-        </div>  <!-- end row -->
 
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-2 center">
-             <button class="btn btn-primary">
-               Dutch
-             </button>
-           </div>
-           <div class="col-sm-4 center">        
-             <button class="btn btn-warning">
-               Deutsch
-             </button>
-          </div>
-        </div> <!-- end row -->
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="img-wrapper center">
+                  <img src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76" />
+                </div>
+              </div>
+            </div>  <!-- end row -->
 
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <span class="red">Your score</span>
-          </div>
+            <div class="row">
+              <div class="col-xs-6 center">
+                <img src="{{ 'dutch.png' | theme_image_url }}" alt="" class="selector">
+               </div>
+               <div class="col-xs-6 center">        
+                <img src="{{ 'deutsch.png' | theme_image_url }}" alt="" class="selector">
+              </div>
+            </div> <!-- end row -->
+          </main>
         </div>
-
-      </div>
+      </div> <!-- end container -->
     </body>
 </html>
 
