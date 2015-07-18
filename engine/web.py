@@ -143,7 +143,7 @@ if __name__ == "__main__":
     server = tornado.httpserver.HTTPServer(app, xheaders=True)
     server.bind(options.port)
     try:
-        server.start(0)  # 0 autodetects cores and forks one process per core
+        server.start() 
         tornado.ioloop.IOLoop.instance().start()
     except KeyboardInterrupt:
         tornado.ioloop.IOLoop.instance().stop()
